@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contactos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main">
+        <h1 id="main-title">Lista de Contactos</h1>
+        
+        <!-- Formulario para agregar contactos -->
+        <div class="form-container">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="nombre" class="form-input error" placeholder="Nombre del contacto">
+                    <p id="nombre-error" class="error-message visible">Por favor ingresa un nombre válido</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" id="telefono" class="form-input" placeholder="Número de teléfono">
+                    <p id="telefono-error" class="error-message">El número debe tener 10 dígitos</p>
+                </div>
+            </div>
+            
+            <button id="agregarTarea" type="button">
+                <i class="fas fa-plus"></i> Agregar Contacto
+            </button>
+        </div>
+        
+        <!-- Lista de contactos -->
+        <div class="task-container">
+            <h2 id="Subtitle">Mis Contactos</h2>
+            
+            <div id="task-list" class="contact-list">
+                <ul class="contacts-ul">
+                    <!-- Algunos contactos de ejemplo -->
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Fermin Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-217-6071" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Oriana Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-768-1024" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+                
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Fermin Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-217-6071" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Oriana Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-768-1024" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+                
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Fermin Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-217-6071" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Oriana Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-768-1024" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Fermin Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-217-6071" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Oriana Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-768-1024" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Fermin Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-217-6071" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Oriana Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-768-1024" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Fermin Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-217-6071" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="contact-info">
+                            <input type="text" class="contact-name" value="Oriana Zamora" readonly>
+                            <input type="text" class="contact-number" value="0424-768-1024" readonly>
+                        </div>
+                        <div class="contact-actions">
+                            <button class="btn-Editar" title="Editar">
+                                📝
+                            </button>
+                            <button class="btn-Eliminar" title="Eliminar">
+                                🗑️
+                            </button>
+                        </div>
+                    </li>
+
+
+                    <!-- Más contactos serían visibles aquí -->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Contador de contactos -->
+        <div id="task-counter">
+            <ul class="task-counters-list">
+                <li>
+                    <div id="titulo-Total-Tareas-Contador">
+                        Total Contactos
+                        <span id="cantidad-Total">12</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Boton para cambiar el tema -->
+    <div class="theme-toggle" title="Cambiar tema">
+        🌙
+    </div>
+
+    <!-- Script para cambiar tema -->
+    <script>
+        // Cambiar entre tema claro y oscuro
+        const themeToggle = document.querySelector('.theme-toggle');
+        const icon = themeToggle.querySelector('i');
+        
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            
+            // Cambiar ícono
+            if (icon.classList.contains('fa-moon')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+    </script>
+
+
+</body>
+</html>
