@@ -18,7 +18,6 @@ Este proyecto es una aplicación web interactiva para gestionar una lista de con
 
 *   HTML5
 *   CSS3
-*   JavaScript
 
 ## Instalación
 
